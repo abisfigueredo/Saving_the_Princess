@@ -213,7 +213,7 @@ body, html {
 }
 
 .power-villain{
-  width: 17%;
+  width: 12%;
   height: 22%;
   z-index: 5;
   opacity: 1;
@@ -223,7 +223,7 @@ body, html {
 
 @keyframes movePowerVillain {
     0% { transform: translateY(-95%) translateX(-55%); opacity: 0; } /* Empieza oculto debajo del bloque */
-    100% { transform: translateY(168%) translateX(18%); opacity: 1; } /* Sube y aparece gradualmente */
+    100% { transform: translateY(168%) translateX(26%); opacity: 1; } /* Sube y aparece gradualmente */
 }
 
 .power-villain {
