@@ -257,8 +257,8 @@ body, html {
 
 /*Efecto para que la iamgen de la princesa en la burbuja baje hasta la posición del Heroe*/
 @keyframes movePrincessBubble {
-    0% { transform: translateY(0); /*opacity: 1;*/ }
-    100% { transform: translateY(187%); /*opacity: 0;*/ }
+    0% { transform: translateY(0) translateX(0); /*opacity: 1;*/ }
+    100% { transform: translateY(187%) translateX(36%); /*opacity: 0;*/ }
 }
 
 .princess-bubble-move {
