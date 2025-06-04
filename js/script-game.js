@@ -20,7 +20,7 @@ function actions() {
     const powerHero = document.querySelector(".power-hero");
     const powerVillain = document.querySelector(".power-villain");
     const powerWinner = document.querySelector(".power-winner")
-    const soundJumpHero = new Audio (src="/Saving_the_Princess/sound/jump-hero.mp3");
+    const soundJumpHero = new Audio (src="/sound/jump-hero.mp3");
 
     if (hero) {
 
@@ -88,9 +88,9 @@ let scoreVillain = 100; // Puntaje del villano
 
 function updateScore() {
     if (gameResetting) return;
-    const soundWinnerHero = new Audio (src="/Saving_the_Princess/sound/hero-winner.mp3");
-    const soundVoiceHero = new Audio (src="/Saving_the_Princess/sound/yeah-winner.mp3");
-    const soundWinnerVillain = new Audio (src="/Saving_the_Princess/sound/villain-winner.mp3")
+    const soundWinnerHero = new Audio (src="/sound/hero-winner.mp3");
+    const soundVoiceHero = new Audio (src="/sound/yeah-winner.mp3");
+    const soundWinnerVillain = new Audio (src="/sound/villain-winner.mp3")
     const mainGame = document.querySelector(".main-game");
 
     //Cambiar el valor de la salud de cada personaje
@@ -124,7 +124,7 @@ function updateScore() {
         gameResetting = true;
         soundWinnerVillain.play();
         mainGame.classList.add("background-tenebrous");
-        heroLose.src = ("/Saving_the_Princess/img/hero-lose.png");
+        heroLose.src = ("/img/hero-lose.png");
         heroLose.style.width ="30%";
         heroLose.style.height = "80%";
         setTimeout(() => {
@@ -144,7 +144,7 @@ function updateScore() {
 
 
         //Se cambia la imagen de la princesa encerrada en una burbuja por la princesa flotando con el vestido
-        princessBubble.src = "/Saving_the_Princess/img/princess-float.png";
+        princessBubble.src = "/img/princess-float.png";
 
         // Se agrega la clase en css con el movimiento y desaparación de la imagen
         princessBubble.classList.add("princess-bubble-move");
@@ -183,9 +183,9 @@ function changeImage() {
     const randomIndexHero = Math.floor(Math.random() * imagesHero.length); // Variable para realizar la aletoriedad de Power Hero
     const randomIndexVillain = Math.floor(Math.random() * imagesVillain.length); // Variable para realizar la aletoriedad de Power Villain
     const mainGame = document.querySelector(".main-game");
-    const soundWarning = new Audio (src="/Saving_the_Princess/sound/warning-villain.mp3");
-    const soundMushroom = new Audio (src="/Saving_the_Princess/sound/mushroom-winner.mp3");
-    const soundThwomp = new Audio (src="/Saving_the_Princess/sound/thwomp-winner.mp3");
+    const soundWarning = new Audio (src="/sound/warning-villain.mp3");
+    const soundMushroom = new Audio (src="/sound/mushroom-winner.mp3");
+    const soundThwomp = new Audio (src="/sound/thwomp-winner.mp3");
 
     powerHero.src = imagesHero[randomIndexHero];
     powerVillain.src = imagesVillain[randomIndexVillain]; 
@@ -249,11 +249,11 @@ function resetGame() {
     //Restablecer imagen de Princess
     princessBubble.classList.remove("princess-bubble-move");
     princessBubble.style.opacity = "1";
-    princessBubble.src = "/Saving_the_Princess/img/princess-bubble.png";
+    princessBubble.src = "/img/princess-bubble.png";
     princess.classList.remove("princess-visible");
 
     //Restablecer imagen del Heroe
-    heroLose.src = ("/Saving_the_Princess/img/hero.png");
+    heroLose.src = ("/img/hero.png");
     heroLose.style.width ="32%";
     heroLose.style.height = "100%";
 
@@ -264,9 +264,9 @@ function resetGame() {
 -----------------------------------------------------------------------------------------------------------------*/
 
 const audios = [];
-const soundWarning = new Audio (src="/Saving_the_Princess/sound/warning-villain.mp3");
-const soundMushroom = new Audio (src="/Saving_the_Princess/sound/mushroom-winner.mp3");
-const soundThwomp = new Audio (src="/Saving_the_Princess/sound/thwomp-winner.mp3");  
+const soundWarning = new Audio (src="/sound/warning-villain.mp3");
+const soundMushroom = new Audio (src="/sound/mushroom-winner.mp3");
+const soundThwomp = new Audio (src="/sound/thwomp-winner.mp3");  
 
 document.getElementById("soundOff").addEventListener("click", function() {
 
