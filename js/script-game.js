@@ -170,9 +170,9 @@ function updateScore() {
 -----------------------------------------------------------------------------------------------------------------*/
 
 // Variable que contiene la ruta de cada una de las imagenes que van a cambiar
-const imagesHero = ["/img/star.png", "/img/flower.png", "/img/moshroom.png"];
-const imagesVillain = ["/img/hammer.png", "/img/bomb.png", "/img/Thwomp.png"];
-const imagesDraw =["/img/draw.png"];
+const imagesHero = ["/Saving_the_Princess/img/star.png", "/Saving_the_Princess/img/flower.png", "/Saving_the_Princess/img/moshroom.png"];
+const imagesVillain = ["/Saving_the_Princess/img/hammer.png", "/Saving_the_Princess/img/bomb.png", "/Saving_the_Princess/img/Thwomp.png"];
+const imagesDraw =["/Saving_the_Princess/img/draw.png"];
 
 // Función para cambiar la imagen aleatoriamente
 function changeImage() {
